@@ -1,22 +1,24 @@
+// import image from '../frontend/src/assets/images/ancomyet.jpeg';
+
 const educationHistory = [
   {
     id: 1,
-    period: "2020 - 2023",
+    period: "2021 - 2023",
     institution: "SMK Tunas Harapan Pati",
     major: "Teknik Komputer dan Jaringan",
     description: "Mempelajari dasar-dasar komputer dan jaringan, termasuk instalasi sistem operasi, konfigurasi jaringan, dan pemrograman dasar."
   },
   {
     id: 2,
-    period: "2017 - 2020",
+    period: "2018 - 2021",
     institution: "SMP Negeri 1 Gunungwungkal",
     major: "Siswa",
     description: "Menempuh pendidikan menengah pertama dan aktif dalam kegiatan ekstrakurikuler Pramuka.",
   },
   {
     id: 3,
-    period: "2011 - 2017",
-    institution: "SD Negeri 2 Gembong",
+    period: "2012 - 2018",
+    institution: "SD Negeri 02 Perdopo",
     major: "Siswa",
     description:
       "Menyelesaikan pendidikan dasar dan mempelajari mata pelajaran umum.",
@@ -35,35 +37,35 @@ const skills = [
 const projects = [
   {
     id: 1,
-    title: 'Website Portofolio Pribadi',
-    description: 'Membangun website portofolio untuk menampilkan proyek, keahlian, dan riwayat pendidikan. Dibangun dengan fokus pada desain yang responsif dan modern.',
+    title: 'Topupin',
+    description: 'Membangun website Topupin sebagai platform top-up all-in-one untuk berbagai game populer. Menyediakan layanan yang cepat, aman, serta mendukung berbagai metode pembayaran, Topupin hadir untuk memenuhi kebutuhan para gamer dengan tampilan modern dan responsif.',
     technologies: ['Vue.js', 'Tailwind CSS', 'JavaScript'],
     link: '#',
-    imageUrl: 'https://via.placeholder.com/400x250.png?text=Portofolio',
+    imageUrl: 'images/topupin.jpeg',
   },
   {
     id: 2,
-    title: 'Aplikasi Kasir (Point of Sale)',
-    description: 'Aplikasi web sederhana untuk manajemen transaksi penjualan. Memungkinkan pencatatan produk, pengelolaan stok dasar, dan pembuatan laporan penjualan harian.',
+    title: 'Analisis Sentimen Komentar YouTube',
+    description: 'Aplikasi ini dibuat untuk mendemonstrasikan analisis sentimen pada data komentar YouTube menggunakan Streamlit dan model Transformer dari Hugging Face. Aplikasi ini merupakan pengembangan dari notebook Jupyter yang Anda berikan.',
     technologies: ['HTML', 'CSS', 'JavaScript', 'MySQL'],
-    link: '#',
-    imageUrl: 'https://via.placeholder.com/400x250.png?text=Sistem+Kasir',
+    link: 'https://ancomyet-3z53gsdet8rnujvw3f9z4e.streamlit.app/',
+    imageUrl: 'images/ancomyet.jpeg',
   },
   {
     id: 3,
-    title: 'Landing Page Produk',
-    description: 'Desain dan implementasi landing page untuk mempromosikan sebuah produk fiktif. Dibuat sepenuhnya responsif untuk semua ukuran layar perangkat.',
+    title: 'Sistem Pemesanan Hotel C++',
+    description: 'Sistem pemesanan hotel sederhana yang memungkinkan pengguna untuk memesan kamar hotel, melihat daftar kamar yang tersedia, dan mengelola pemesanan.',
     technologies: ['HTML5', 'Tailwind CSS', 'JavaScript'],
-    link: '#',
-    imageUrl: 'https://via.placeholder.com/400x250.png?text=Landing+Page',
+    link: 'https://drive.google.com/drive/folders/1qq1UPgUZKkkUwiS5hnZYA9vlsGVkegdf',
+    imageUrl: 'images/sistempemesananhotel.jpg',
   },
   {
     id: 4,
-    title: 'Website Company Profile',
-    description: 'Membuat website profil perusahaan fiktif yang menampilkan informasi tentang perusahaan, layanan yang ditawarkan, dan halaman kontak.',
+    title: 'Sistem Manajemen Karyawan C++',
+    description: 'sistem manajemen karyawan sederhana yang memungkinkan pengguna untuk menambahkan, menghapus, dan melihat daftar karyawan.',
     technologies: ['Vue.js', 'JavaScript'],
     link: '#',
-    imageUrl: 'https://via.placeholder.com/400x250.png?text=Company+Profile',
+    imageUrl: 'images/staffhub.jpeg',
   },
 ];
 module.exports = { educationHistory, skills, projects };

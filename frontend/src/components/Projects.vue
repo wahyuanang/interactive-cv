@@ -22,7 +22,7 @@ onMounted(async () => {
           :key="project.title"
           class="bg-gray-50 rounded-lg shadow-lg overflow-hidden"
         >
-          <img :src="project.image" alt="Gambar Proyek" class="w-full h-56 object-cover" />
+          <img :src="project.imageUrl" alt="Gambar Proyek" class="w-full h-72 object-fit" />
           <div class="p-6">
             <h3 class="text-2xl font-bold text-gray-800 mb-2">{{ project.title }}</h3>
             <p class="text-gray-600 mb-4">{{ project.description }}</p>
