@@ -1,22 +1,27 @@
-// import image from '../frontend/src/assets/images/ancomyet.jpeg';
-
 const educationHistory = [
   {
     id: 1,
+    period: "2023 - Sekarang",
+    institution: "Universitas Amikom Yogyakarta",
+    major: "S1-Informatika",
+    description: "Mempelajari dasar-dasar komputer dan jaringan, termasuk instalasi sistem operasi, konfigurasi jaringan, dan pemrograman dasar."
+  },
+  {
+    id: 2,
     period: "2021 - 2023",
     institution: "SMK Tunas Harapan Pati",
     major: "Teknik Komputer dan Jaringan",
     description: "Mempelajari dasar-dasar komputer dan jaringan, termasuk instalasi sistem operasi, konfigurasi jaringan, dan pemrograman dasar."
   },
   {
-    id: 2,
+    id: 3,
     period: "2018 - 2021",
     institution: "SMP Negeri 1 Gunungwungkal",
     major: "Siswa",
     description: "Menempuh pendidikan menengah pertama dan aktif dalam kegiatan ekstrakurikuler Pramuka.",
   },
   {
-    id: 3,
+    id: 4,
     period: "2012 - 2018",
     institution: "SD Negeri 02 Perdopo",
     major: "Siswa",
