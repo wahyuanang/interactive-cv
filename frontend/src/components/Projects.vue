@@ -3,12 +3,13 @@ import { ref, onMounted } from 'vue'
 import axios from 'axios'
 import SectionTitle from './SectionTitle.vue'
 const projects = ref([])
+const API_URL = import.meta.env.PROD ? '/api/projects' : 'http://localhost:3000/api/projects'
 onMounted(async () => {
   try {
-    const response = await axios.get('http://localhost:3000/api/projects')
+    const response = await axios.get(API_URL)
     projects.value = response.data
   } catch (error) {
-    console.error(error)
+    console.error('Gagal mengambil data proyek:', error)
   }
 })
 </script>
