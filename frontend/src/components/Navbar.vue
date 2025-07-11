@@ -1,3 +1,4 @@
+<!-- filepath: c:\Users\LENOVO\Downloads\interactive-cv\frontend\src\components\Navbar.vue -->
 <template>
   <header class="bg-white shadow-md sticky top-0 z-50 animate-fade-in">
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
@@ -14,7 +15,7 @@
         <li>
           <a
             href="#pendidikan"
-            class="text-gray-600 hover:text-blue-500 transform hover:-translate- y-0.5 transition-all duration-300"
+            class="text-gray-600 hover:text-blue-500 transform hover:-translate-y-0.5 transition-all duration-300"
             >Pendidikan</a
           >
         </li>
@@ -44,3 +45,5 @@
     </nav>
   </header>
 </template>
+
+
