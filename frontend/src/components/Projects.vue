@@ -19,7 +19,7 @@ onMounted(async () => {
       <SectionTitle title="Proyek Unggulan" />
       <div class="grid md:grid-cols-2 gap-12">
         <div
-          v-for="t in project.technologies"
+          v-for="project in projects"
           :key="project.title"
           class="bg-gray-50 rounded-lg shadow-lg overflow-hidden"
         >
@@ -40,7 +40,7 @@ onMounted(async () => {
               :href="project.link"
               target="_blank"
               rel="noopener noreferrer"
-              class="text-blue-600 font- semibold hover:underline"
+              class="text-blue-600 font-semibold hover:underline"
               >Lihat Detail &rarr;</a
             >
           </div>
