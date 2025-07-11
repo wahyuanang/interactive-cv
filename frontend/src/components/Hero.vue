@@ -8,7 +8,7 @@
         Halo, Saya <span class="text-blue-600">Lina Rahmawati</span>
       </h1>
       <p class="text-xl text-gray-600 mb-8 animate-slide-in-left" style="animation-delay: 400ms">
-        Mahasiswa Teknik Informatika yang bersemangat dalam pengembangan web dan desain antarmuka.
+        Mahasiswa Teknik Informatika dari Universitas Amikom Yogyakarta yang bersemangat dalam pengembangan web dan desain antarmuka.
       </p>
 
       <a
