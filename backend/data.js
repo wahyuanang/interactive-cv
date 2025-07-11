@@ -4,7 +4,7 @@ const educationHistory = [
     period: "2023 - Sekarang",
     institution: "Universitas Amikom Yogyakarta",
     major: "S1-Informatika",
-    description: "Mempelajari dasar-dasar komputer dan jaringan, termasuk instalasi sistem operasi, konfigurasi jaringan, dan pemrograman dasar."
+    description: "Memperdalam ilmu komputer dengan fokus pada pengembangan perangkat lunak, algoritma, dan sistem informasi. Aktif dalam berbagai organisasi kemahasiswaan dan proyek pengembangan perangkat lunak.",
   },
   {
     id: 2,
