@@ -28,11 +28,11 @@ onMounted(async () => {
             <div class="w-1/2 pr-8 text-right">
               <p class="font-semibold text-blue-600">{{ edu.period }}</p>
               <h3 class="text-2xl font-bold text-gray-800">{{ edu.institution }}</h3>
-              <p class="text-gray- 600">{{ edu.major }}</p>
+              <p class="text-gray-600">{{ edu.major }}</p>
             </div>
 
             <div class="w-1/2 flex justify-start">
-              <div class="w-4 h-4 bg-blue-600 rounded-full z- 10"></div>
+              <div class="w-4 h-4 bg-blue-600 rounded-full z-10"></div>
             </div>
           </div>
 

@@ -19,7 +19,7 @@ onMounted(async () => {
       <SectionTitle title="Proyek Unggulan" />
       <div class="grid md:grid-cols-2 gap-12">
         <div
-          v-for="project in projects"
+          v-for="t in project.technologies"
           :key="project.title"
           class="bg-gray-50 rounded-lg shadow-lg overflow-hidden"
         >
@@ -29,7 +29,7 @@ onMounted(async () => {
             <p class="text-gray-600 mb-4">{{ project.description }}</p>
             <div class="mb-4">
               <span
-                v-for="t in project.tech"
+                v-for="t in project.technologies"
                 :key="t"
                 class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-full"
                 >{{ t }}</span
