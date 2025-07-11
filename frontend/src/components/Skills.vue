@@ -1,18 +1,19 @@
 <script setup>
-import { ref, onMounted } from 'vue'
-import axios from 'axios'
+import { ref } from 'vue'
 import SectionTitle from './SectionTitle.vue'
-const skills = ref([])
-const API_URL = import.meta.env.PROD ? '/api/skills' : 'http://localhost:3000/api/skills'
-onMounted(async () => {
-  try {
-    const response = await axios.get(API_URL)
-    skills.value = response.data
-  } catch (error) {
-    console.error('Gagal mengambil data skill:', error)
-  }
-})
+
+const skills = ref([
+  { id: 1, name: 'HTML5 & CSS3', level: 'Mahir', category: 'Frontend' },
+  { id: 2, name: 'JavaScript (ES6+)', level: 'Menengah', category: 'Bahasa Pemrograman' },
+  { id: 3, name: 'Tailwind CSS', level: 'Mahir', category: 'Framework CSS' },
+  { id: 4, name: 'Vue.js', level: 'Menengah', category: 'Framework JavaScript' },
+  { id: 5, name: 'Node.js', level: 'Pemula', category: 'Backend' },
+  { id: 6, name: 'MySQL', level: 'Menengah', category: 'Database' },
+  { id: 7, name: 'Git & GitHub', level: 'Menengah', category: 'Alat & Teknologi' },
+  { id: 8, name: 'Dasar Jaringan (TCP/IP)', level: 'Menengah', category: 'Jaringan' },
+])
 </script>
+
 <template>
   <section id="skill" class="py-20 bg-gray-50">
     <div class="container mx-auto px-6">

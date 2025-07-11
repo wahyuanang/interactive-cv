@@ -1,18 +1,39 @@
 <script setup>
-import { ref, onMounted } from 'vue'
-import axios from 'axios'
+import { ref } from 'vue'
 import SectionTitle from './SectionTitle.vue'
-const educationHistory = ref([])
-const API_URL = import.meta.env.PROD ? '/api/education' : 'http://localhost:3000/api/education'
-onMounted(async () => {
-  try {
-    const response = await axios.get(API_URL)
-    educationHistory.value = response.data
-  } catch (error) {
-    console.error('Gagal mengambil data pendidikan:', error)
-  }
-})
+
+const educationHistory = ref([
+  {
+    id: 1,
+    period: "2023 - Sekarang",
+    institution: "Universitas Amikom Yogyakarta",
+    major: "S1-Informatika",
+    description: "Memperdalam ilmu komputer dengan fokus pada pengembangan perangkat lunak, algoritma, dan sistem informasi. Aktif dalam berbagai organisasi kemahasiswaan dan proyek pengembangan perangkat lunak.",
+  },
+  {
+    id: 2,
+    period: "2021 - 2023",
+    institution: "SMK Tunas Harapan Pati",
+    major: "Teknik Komputer dan Jaringan",
+    description: "Mempelajari dasar-dasar komputer dan jaringan, termasuk instalasi sistem operasi, konfigurasi jaringan, dan pemrograman dasar."
+  },
+  {
+    id: 3,
+    period: "2018 - 2021",
+    institution: "SMP Negeri 1 Gunungwungkal",
+    major: "Siswa",
+    description: "Menempuh pendidikan menengah pertama dan aktif dalam kegiatan ekstrakurikuler Pramuka.",
+  },
+  {
+    id: 4,
+    period: "2012 - 2018",
+    institution: "SD Negeri 02 Perdopo",
+    major: "Siswa",
+    description: "Menyelesaikan pendidikan dasar dan mempelajari mata pelajaran umum.",
+  },
+])
 </script>
+
 <template>
   <section id="pendidikan" class="py-20 bg-white">
     <div class="container mx-auto px-6">
