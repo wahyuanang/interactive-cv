@@ -29,6 +29,7 @@ onMounted(async () => {
               <p class="font-semibold text-blue-600">{{ edu.period }}</p>
               <h3 class="text-2xl font-bold text-gray-800">{{ edu.institution }}</h3>
               <p class="text-gray-600">{{ edu.major }}</p>
+              <p class="text-gray-500 text-sm mt-2">{{ edu.description }}</p>
             </div>
 
             <div class="w-1/2 flex justify-start">
@@ -45,6 +46,7 @@ onMounted(async () => {
               <p class="font-semibold text-blue-600">{{ edu.period }}</p>
               <h3 class="text-2xl font-bold text-gray-800">{{ edu.institution }}</h3>
               <p class="text-gray-600">{{ edu.major }}</p>
+              <p class="text-gray-500 text-sm mt-2">{{ edu.description }}</p>
             </div>
           </div>
         </div>

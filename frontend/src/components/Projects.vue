@@ -20,19 +20,19 @@ onMounted(async () => {
       <div class="grid md:grid-cols-2 gap-12">
         <div
           v-for="project in projects"
-          :key="project.title"
+          :key="project.id"
           class="bg-gray-50 rounded-lg shadow-lg overflow-hidden"
         >
-          <img :src="project.imageUrl" alt="Gambar Proyek" class="w-full h-72 object-fit" />
+          <img :src="`/${project.imageUrl}`" :alt="project.title" class="w-full h-72 object-cover" />
           <div class="p-6">
             <h3 class="text-2xl font-bold text-gray-800 mb-2">{{ project.title }}</h3>
             <p class="text-gray-600 mb-4">{{ project.description }}</p>
             <div class="mb-4">
               <span
-                v-for="t in project.technologies"
-                :key="t"
+                v-for="tech in project.technologies"
+                :key="tech"
                 class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-full"
-                >{{ t }}</span
+                >{{ tech }}</span
               >
             </div>
 

@@ -20,11 +20,12 @@ onMounted(async () => {
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
         <div
           v-for="skill in skills"
-          :key="skill.name"
+          :key="skill.id"
           class="bg-white p-6 rounded-lg shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300"
         >
           <h3 class="text-xl font-bold text-gray-800">{{ skill.name }}</h3>
           <p class="text-gray-500 mt-2">{{ skill.level }}</p>
+          <p class="text-blue-600 text-sm mt-1">{{ skill.category }}</p>
         </div>
       </div>
     </div>
